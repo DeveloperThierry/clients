@@ -1,0 +1,36 @@
+### Get Clients
+GET http://localhost:3000/api/clients
+
+
+### Create Client
+POST http://localhost:3000/api/clients
+Content-Type:application/json
+
+{
+    "name":"Timothy",
+    "email":"timothy@example.com",
+    "job":"truck driver",
+    "rate":70,
+    "isactive": true
+}
+
+
+### Update Client
+PATCH http://localhost:3000/api/clients/6
+Content-Type:application/json
+
+{
+    "name":"Tim",
+    "email":"tim@example.com",
+    "job":"salesman",
+    "rate":30,
+    "isactive": false
+}
+
+
+### Update Client
+DElETE http://localhost:3000/api/clients/6
+
+
+### Search Client
+GET http://localhost:3000/api/clients/search?q=ev
